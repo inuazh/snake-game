@@ -3,7 +3,7 @@ let score = 0;
 
 const config = {
     step: 0,
-    maxStep: 6,
+    maxStep: 10,
     sizeCell: 16,
     sizeBerry: 16 / 4
 }
