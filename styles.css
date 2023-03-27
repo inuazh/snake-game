@@ -1,4 +1,4 @@
-/* Общие стили для всего документа */
+
 
 * {
     box-sizing: border-box;
@@ -14,7 +14,6 @@ body {
     line-height: 1.5;
 }
 
-/* Стили для обертки игры */
 
 #game {
     margin: 50px auto;
@@ -22,7 +21,7 @@ body {
     position: relative;
 }
 
-/* Стили для шапки игры */
+
 
 .game-header {
     background-color: #34495e;
@@ -35,40 +34,64 @@ body {
     font-size: 24px;
 }
 
-/* Стили для счетчика очков */
 
 .score-count {
     font-weight: bold;
 }
 
-/* Стили для холста игры */
 
 .canvas-wrapper {
-    background-color: #ecf0f1;
-    border: 1px solid #bdc3c7;
+    background-color: #2c2c2c;
+    border: 5px solid #191919;
     margin: 10px;
     overflow: hidden;
     position: relative;
+    box-shadow: 0px 0px 40px 10px #A00034;
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.2'%3E%3Ccircle cx='8' cy='8' r='4' fill='%23525053'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
 #game-canvas {
     display: block;
+    
+}
+
+.intro_content{
+    position: absolute;
+    z-index: 1;
+    left: 40svw;
+    top: 0;
 }
 
 .intro{
     max-height: 100svh;
+    overflow: hidden;
+    position: relative;
+}
+
+.intro::after{
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
 }
 
 .video{
     position: relative;
+    z-index: -2;
     padding-bottom: 56.25%;
+
 }
 
 .video_media{
-    width: 100svw;
+    width: 100%;
     height: auto;
     position: absolute;
     top: 0;
     left: 0;
 }
+
